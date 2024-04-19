@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-listt = [chr(i) for i in range(97, 123) if chr(i) not in ['q', 'e']]
-alphabet_string = ''.join(listt)
-print(alphabet_string,end='')
+for char in range(26):
+    if char != 4 and char != 16:
+        print("{:s}".format(chr(char + ord("a"))), end="")

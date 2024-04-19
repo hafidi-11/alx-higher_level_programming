@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-listt = list(map(chr, range(97, 123)))
-alphabet_string = ''.join(listt)
-print(alphabet_string,end='')
+for char in range(26):
+    print("{:s}".format(chr(char + ord("a"))), end="")
